@@ -28,7 +28,7 @@
 }
 
 html{
-    font-size:16px;
+    font-size:14px;
 }
 *{
     margin: 0;
@@ -51,6 +51,59 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/* selector */
+.selector{
+    width: 300px;
+}
+.selectBox{
+    width: 100%;
+    background-color: rgb(248, 165, 159);
+    padding: 10px 10px 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#arrow{
+    width: 16px;
+    transition: transform 0.3s;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+/* List box  */
+#list{
+    background-color: rgb(248, 165, 159);
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+.hide{
+    visibility: hidden;
+}
+.options{
+    position: relative;
+    width: 100%;
+    padding: 15px 0px 15px 45px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.options:hover{
+    background-color: white;
+}
+
+.options img{
+    position: absolute;
+    left:8px;
+    top:12px;
+    width: 25px;
+}
+
+/* footer section  */
 footer{
     flex: 1;
     color: white
